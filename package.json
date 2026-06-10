@@ -2,12 +2,21 @@
   "name": "genbill",
   "version": "0.1.0",
   "private": true,
+  "main": "electron/electron.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "electron": "electron electron/electron.js"
+    "electron": "electron electron/electron.js",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.genbill.app",
+    "productName": "GenBill",
+    "win": {
+      "target": "nsis"
+    }
   },
   "dependencies": {
     "next": "16.2.7",
@@ -18,6 +27,7 @@
     "@tailwindcss/postcss": "^4",
     "babel-plugin-react-compiler": "1.0.0",
     "electron": "^42.3.3",
+    "electron-builder": "^26.15.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.7",
     "tailwindcss": "^4"

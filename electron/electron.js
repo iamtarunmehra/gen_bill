@@ -6,7 +6,9 @@ function createWindow() {
     height: 900,
   });
 
-  win.loadURL("http://localhost:3000");
+  // win.loadURL("http://localhost:3000");
+  win.loadURL("https://gen-bill.vercel.app/");
+
 }
 
 app.whenReady().then(() => {
