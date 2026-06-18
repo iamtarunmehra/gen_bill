@@ -16,9 +16,17 @@
     "productName": "GenBill",
     "win": {
       "target": "nsis"
-    }
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "owner": "iamtarunmehra",
+        "repo": "gen_bill"
+      }
+    ]
   },
   "dependencies": {
+    "electron-updater": "^6.8.9",
     "next": "16.2.7",
     "react": "19.2.4",
     "react-dom": "19.2.4"
